@@ -1,0 +1,97 @@
+@import "./font.css";
+@import "./reset.css";
+@import "./blocks/**/*.pcss";
+
+html {
+  font-family: 'Gilroy', sans-serif;
+  background-color: var(--color-white);
+  color: var(--color-black);
+  font-size: 16px;
+
+  @media (--sm) {
+    font-size: 14px;
+  }
+}
+html, body {
+  height: 100%;
+}
+
+#app {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  @media (--sm) {
+    background-image: url(./img/bg_mob.png);
+    background-size: cover;
+    background-position: top center, top left, top right;
+    background-repeat: no-repeat;
+  }
+}
+
+.container {
+  width: 100%;
+  max-width: var(--content-width);
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: var(--container-padding-w);
+  padding-right: var(--container-padding-w);
+}
+
+.btn-wrap {
+  display: inline-flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+
+  & > span {
+    text-align: center;
+    display: inline-block;
+    font-weight: 400;
+    font-size: var(--fz-min);
+    opacity: 0.5;
+    margin-top: 10px;
+  }
+}
+.btn {
+  display: inline-block;
+  padding: 20px 25px;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.2;
+  color: #8E711B;
+  background: linear-gradient(70.9deg, #FFDD7C 2.12%, #FDCD44 102.45%), #FFDD7C;
+  box-shadow: inset 0px 5px 4px rgba(255, 255, 255, 0.3);
+  border-radius: 90px; 
+}
+
+:root {
+  /* color */
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-gray: #898989;
+  --color-blue: #343D58;
+  --color-yellow:  #FFDB74;
+  /* font  */
+  --fz-btn: 16px;
+  --fz-h2: 32px;
+  --fz-min: 14px;
+  /* content */
+  --content-width: 1160px;
+  --container-padding-h: 60px;
+  --container-padding-w: 30px;
+
+  @media (--xl) {
+    --fz-h2: 22px;
+  }
+  @media (--md) {
+    --fz-btn: 14px;
+    --container-padding-w: 20px;
+  }
+  @media (--sm) {
+    --container-padding-h: 8%;
+    --container-padding-w: 10px;
+  }
+  @media (--xs) {
+    --fz-h2: 20px;
+  }
+}

@@ -1,0 +1,29 @@
+{
+  "name": "landing-lestnica",
+  "version": "1.0.0",
+  "source": [
+    "/src/index.pug"
+  ],
+  "browserslist": "> 0.5%, last 5 versions, not dead",
+  "scripts": {
+    "serve": "parcel serve --port 8080 --open chrome",
+    "build": "rm -rf public_html/* && rm -rf .parcel-cache/* && parcel build --public-url ./ --dist-dir public_html && cp -a src/assets/. public_html"
+  },
+  "devDependencies": {
+    "@parcel/resolver-glob": "^2.2.1",
+    "@parcel/transformer-pug": "^2.2.1",
+    "autoprefixer": "^10.4.2",
+    "imask": "^6.4.2",
+    "jstransformer-markdown-it": "^2.1.0",
+    "parcel": "^2.6.0",
+    "parcel-resolver-ignore": "^2.1.1",
+    "postcss-100vh-fix": "^1.0.2",
+    "postcss-custom-media": "^8.0.0",
+    "postcss-easings": "^3.0.1",
+    "postcss-nested": "^5.0.6",
+    "smoothscroll-polyfill": "^0.4.4",
+    "swiper": "^8.3.0"
+  },
+  "author": "",
+  "license": "ISC"
+}

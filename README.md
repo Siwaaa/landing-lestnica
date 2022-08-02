@@ -1,4 +1,4 @@
-# Landing for CHERNOZEM prod.
+# Landing for lestnica.
 
 ## Install dep
 

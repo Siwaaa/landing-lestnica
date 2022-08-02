@@ -12,6 +12,7 @@
   "devDependencies": {
     "@parcel/resolver-glob": "^2.2.1",
     "@parcel/transformer-pug": "^2.2.1",
+    "@parcel/transformer-webmanifest": "^2.6.2",
     "autoprefixer": "^10.4.2",
     "imask": "^6.4.2",
     "jstransformer-markdown-it": "^2.1.0",

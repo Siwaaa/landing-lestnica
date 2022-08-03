@@ -16,6 +16,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    -moz-user-select: none;
+    -khtml-user-select: none;
+    user-select: none;
+
     & > img {
       width: 49px;
       height: 49px;
@@ -39,12 +43,19 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    
     @media (--xs) {
       display: none;
     }
 
     & > img {
+      cursor: pointer;
       margin-right: 15px;
+      transition: transform .6s ease-in-out;
+
+      &:hover {
+        transform: translateY(5px);
+      }
 
       @media (--md) {
         width: 110px;
@@ -109,8 +120,24 @@
   height: var(--online-tel);
   background-color: #5FFC7B;
   border-radius: 50%;
+  animation: online 4s infinite;
 
   @media (--sm) {
     --online-tel: 6px;
+  }
+}
+
+@keyframes online {
+  0% {
+    opacity: 1;
+  }
+  40% {
+    opacity: 1;
+  }
+  80% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
   }
 }

@@ -1,15 +1,15 @@
 section.main 
   .main__content.container
-    .main__info 
+    .main__info
       h3.mo В Москве и Московской области
-      h1 Лестницы на металлокаркасе
-      p Скачайте прайс-каталог на все виды лестниц с фиксированными ценами
+      h1(data-animate-on-scroll) Лестницы на металлокаркасе
+      p(data-animate-on-scroll) Скачайте прайс-каталог на все виды лестниц с фиксированными ценами
       .main__catalog-mob
         img(src="./img/price_mob.png", alt="Каталог цен")
-      form.main__form 
+      form(class="main__form" data-animate-on-scroll)
         input(type="tel" name="" placeholder="+7 (999) 999 99 99")
         .btn-wrap
           button(type="submit" class="btn") Загрузить прайс-каталог
           span Каталог бесплатный <br> и загрузится автоматически
-    .main__catalog
+    div(class="main__catalog" data-animate-on-scroll)
       img(src="./img/price.png", alt="Каталог цен")
